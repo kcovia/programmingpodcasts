@@ -1,9 +1,29 @@
 
 /** General page styling **/
 html, body {
-  background-color: #eee;
 
-	font-family: "Helvetica Neue", Helvetica, sans-serif;
+
+	  /* fallback */
+	background: #fff;
+
+	  background-repeat: repeat-x;
+
+	  /* Safari 4-5, Chrome 1-9 */
+	  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#efefef), to(#fff));
+
+	  /* Safari 5.1, Chrome 10+ */
+	  background: -webkit-linear-gradient(top, #efefef, #fff);
+
+	  /* Firefox 3.6+ */
+	  background: -moz-linear-gradient(top, #efefef, #fff);
+
+	  /* IE 10 */
+	  background: -ms-linear-gradient(top, #efefef, #fff);
+
+	  /* Opera 11.10+ */
+	  background: -o-linear-gradient(top, #efefef, #fff);
+
+	font-family: "Myriad Pro", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 #main {
@@ -12,26 +32,30 @@ html, body {
 }
 
 header {
-	background: #111;
-	margin: 0% 0 0 0 ;
-	padding: 1% 0 1% 0;
+
+	margin: 2% 0 0 0 ;
+	padding: 1% 0 0% 0;
+
 }
 
-header h1 {
+header h1  {
+	
   text-align: center;
-  font-size: 1.2em;
-  font-weight: normal;
+  font-size: 2em;
+  font-weight: bold;
   margin: 0% 0 0% 0;
-  font-family: monospace;
-  letter-spacing: 2px;
-  padding: 0%;
 
+
+  padding: 0%;
+	
 }
+
 
 #container header h1 a {
 	text-decoration: none;
-	color: #eee;
-	text-transform: lowercase;	
+	color: #111;
+
+
 }
 
 #container header h1 a:hover {
@@ -138,19 +162,18 @@ color: #666;
  * Filters
  */
 #filters {
-  list-style-type: none;
+  list-style-type: none;;
+  margin: 2% 2%;
+  font-size: 1em;
+text-align: center;
 
-  margin: 2% 0% 0% 1%;
-	font-size: 1em;
-  text-transform: lowercase;
 }
 
-ol  li {
+#filters li {
 
   display: inline;
-  padding: 0.5%;
+  padding: 0.2%;
   cursor: pointer;
-
   margin: 1%;
   width: 0%;
   color: #222;
@@ -161,7 +184,7 @@ ol  li {
 
 #filters li:hover {
 
-  background: #ccc;
+	text-decoration: underline	;
 }
 
 #filters li.active {
@@ -178,16 +201,14 @@ ol  li {
 /* Small Resolution ---s--*/
 @media screen and (max-width: 480px) {
 	h1 {
-		font-size: 1.5em !important;
-		letter-spacing: 3px !important;
+		font-size: 1.5em;
+
 	}
 
 	
 	#filters li  {
-		display: inline;
-		float: none;
 		font-size: 2em;
-		margin: 1%;
+		
 
 
 	}
@@ -197,10 +218,9 @@ ol  li {
 @media screen and (max-width: 1024px) {
 	
 	#filters li  {
-		display: inline;
-		float: none;
-		font-size: 1.5em;
-		margin-right: 2%;
+	font-size: 1.1em;
+
+
 
 
 	}
