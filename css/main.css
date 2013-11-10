@@ -1,28 +1,12 @@
 
 /** General page styling **/
 html, body {
-
+	height: 100%;
 
 	  /* fallback */
-	  background: #fff;
+	background: #fff;
+	background-image: linear-gradient(#fff, #f3f3f3);
 	
-	 /* Safari 4-5, Chrome 1-9 */
-	  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eee));
-
-	  /* Safari 5.1, Chrome 10+ */
-	  background: -webkit-linear-gradient(top, #fff, #eee);
-
-	  /* Firefox 3.6+ */
-	  background: -moz-linear-gradient(top, #fff, #eee);
-
-	  /* IE 10 */
-	  background: -ms-linear-gradient(top, #fff, #eee);
-
-	  /* Opera 11.10+ */
-	  background: -o-linear-gradient(top, #fff, #eee);
-
-	  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, sans-serif;
-
 }
 
 #main {
@@ -183,7 +167,7 @@ text-align: center;
 
 #filters li:hover {
 
-	text-decoration: underline	;
+	color: #777;
 }
 
 #filters li.active {
@@ -204,10 +188,15 @@ text-align: center;
 
 	}
 
-	
+	#filters {	
+		text-align: center;}
+		
 	#filters li  {
 		font-size: 2em;
-		
+		width: 100%;
+		display: block;
+		padding: 0;
+		margin: 0;
 
 
 	}
