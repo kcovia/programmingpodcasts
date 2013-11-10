@@ -1,0 +1,228 @@
+
+/** General page styling **/
+html, body {
+
+
+	  /* fallback */
+	background: #fff;
+
+	  background-repeat: repeat-x;
+
+	  /* Safari 4-5, Chrome 1-9 */
+	  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#efefef), to(#fff));
+
+	  /* Safari 5.1, Chrome 10+ */
+	  background: -webkit-linear-gradient(top, #efefef, #fff);
+
+	  /* Firefox 3.6+ */
+	  background: -moz-linear-gradient(top, #efefef, #fff);
+
+	  /* IE 10 */
+	  background: -ms-linear-gradient(top, #efefef, #fff);
+
+	  /* Opera 11.10+ */
+	  background: -o-linear-gradient(top, #efefef, #fff);
+
+	font-family: "Myriad Pro", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#main {
+  margin:1% 0;
+  position: relative;
+}
+
+header {
+
+	margin: 2% 0 0 0 ;
+	padding: 1% 0 0% 0;
+
+}
+
+header h1  {
+	
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0% 0 0% 0;
+
+
+  padding: 0%;
+	
+}
+
+
+#container header h1 a {
+	text-decoration: none;
+	color: #111;
+
+
+}
+
+#container header h1 a:hover {
+	opacity: .8;
+
+}
+
+/**
+ * Grid container
+ */
+#tiles {
+  list-style-type: none;
+  position: relative; /** Needed to ensure items are laid out relative to this container **/
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Grid items
+ */
+#tiles li {
+  max-width: 200px;
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+          border-radius: 2px;
+     -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  display: none; 
+  cursor: pointer;
+  padding: 4px;
+}
+
+#tiles li.inactive {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#tiles li img {
+  display: block;
+	width: 100%;
+}
+
+/**
+ * Grid item text
+ */
+#tiles li p {
+  color: #666;
+  font-size: 12px;
+  margin: 7px 0 0 7px;
+}
+
+#tiles li a {
+	text-decoration: none;
+}
+
+/**
+ * Placerholder css
+ */
+.wookmark-placeholder {
+          border-radius: 2px;
+     -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  z-index: -1;
+}
+
+
+#footer {
+	margin: 4% 1%;
+	text-align: center;
+	color: #666;
+}
+
+#footer a {
+color: #666;	
+}
+
+
+/*TAKEN FROM STYLE.CSS*/
+
+#main {
+  overflow: hidden;
+}
+
+/**
+ * Grid items animation
+ */
+#tiles li {
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+.wookmark-placeholder {
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+/**
+ * Filters
+ */
+#filters {
+  list-style-type: none;;
+  margin: 2% 2%;
+  font-size: 1em;
+text-align: center;
+
+}
+
+#filters li {
+
+  display: inline;
+  padding: 0.2%;
+  cursor: pointer;
+  margin: 1%;
+  width: 0%;
+  color: #222;
+
+
+}
+
+
+#filters li:hover {
+
+	text-decoration: underline	;
+}
+
+#filters li.active {
+
+	 font-weight: bold;
+
+}
+
+
+
+/*Media Queries - always at bottom*/
+
+
+/* Small Resolution ---s--*/
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 1.5em;
+
+	}
+
+	
+	#filters li  {
+		font-size: 2em;
+		
+
+
+	}
+}
+
+/*Medium Resolution*/
+@media screen and (max-width: 1024px) {
+	
+	#filters li  {
+	font-size: 1.1em;
+
+
+
+
+	}
+	
+}
