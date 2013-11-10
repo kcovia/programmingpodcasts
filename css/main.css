@@ -140,7 +140,7 @@ color: #666;
  */
 #filters {
   list-style-type: none;;
-  margin: 2% 2%;
+  margin: 2% 0%;
   font-size: 1em;
 text-align: center;
 
@@ -151,7 +151,7 @@ text-align: center;
   display: inline;
   padding: 0.2%;
   cursor: pointer;
-  margin: 1%;
+  margin: 1% 1% 0 0;
   width: 0%;
   color: #222;
 
