@@ -1,29 +1,12 @@
 
 /** General page styling **/
 html, body {
-
+	height: 100%;
 
 	  /* fallback */
 	background: #fff;
-
-	  background-repeat: repeat-x;
-
-	  /* Safari 4-5, Chrome 1-9 */
-	  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#efefef), to(#fff));
-
-	  /* Safari 5.1, Chrome 10+ */
-	  background: -webkit-linear-gradient(top, #efefef, #fff);
-
-	  /* Firefox 3.6+ */
-	  background: -moz-linear-gradient(top, #efefef, #fff);
-
-	  /* IE 10 */
-	  background: -ms-linear-gradient(top, #efefef, #fff);
-
-	  /* Opera 11.10+ */
-	  background: -o-linear-gradient(top, #efefef, #fff);
-
-	font-family: "Myriad Pro", "Helvetica Neue", Helvetica, sans-serif;
+	background-image: linear-gradient(#fff, #f3f3f3);
+	
 }
 
 #main {
@@ -32,20 +15,15 @@ html, body {
 }
 
 header {
-
 	margin: 2% 0 0 0 ;
 	padding: 1% 0 0% 0;
-
 }
 
 header h1  {
-	
   text-align: center;
   font-size: 2em;
   font-weight: bold;
   margin: 0% 0 0% 0;
-
-
   padding: 0%;
 	
 }
@@ -54,8 +32,6 @@ header h1  {
 #container header h1 a {
 	text-decoration: none;
 	color: #111;
-
-
 }
 
 #container header h1 a:hover {
@@ -125,7 +101,8 @@ header h1  {
 
 
 #footer {
-	margin: 4% 1%;
+	margin: 0;
+	padding: 2%;
 	text-align: center;
 	color: #666;
 }
@@ -163,7 +140,7 @@ color: #666;
  */
 #filters {
   list-style-type: none;;
-  margin: 2% 2%;
+  margin: 2% 0%;
   font-size: 1em;
 text-align: center;
 
@@ -174,7 +151,7 @@ text-align: center;
   display: inline;
   padding: 0.2%;
   cursor: pointer;
-  margin: 1%;
+  margin: 1% 1% 0 0;
   width: 0%;
   color: #222;
 
@@ -184,7 +161,7 @@ text-align: center;
 
 #filters li:hover {
 
-	text-decoration: underline	;
+	color: #777;
 }
 
 #filters li.active {
@@ -205,11 +182,17 @@ text-align: center;
 
 	}
 
-	
+	#filters {	
+		text-align: center;
+		margin: 0;
+		padding: 0;}
+		
 	#filters li  {
 		font-size: 2em;
-		
-
+		width: 100%;
+		display: block;
+		padding: 0;
+		margin: 0;
 
 	}
 }
