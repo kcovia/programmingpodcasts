@@ -4,7 +4,8 @@ html, body {
 
 
 	  /* fallback */
-	background: #fff;
+	  background: #fff;
+	
 	 /* Safari 4-5, Chrome 1-9 */
 	  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ddd));
 
@@ -20,8 +21,8 @@ html, body {
 	  /* Opera 11.10+ */
 	  background: -o-linear-gradient(top, #fff, #ddd);
 
-	font-family: "Myriad Pro", "Helvetica Neue", Helvetica, sans-serif;
-}
+	  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, sans-serif;
+
 }
 
 #main {
