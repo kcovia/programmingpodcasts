@@ -34,6 +34,10 @@ header h1  {
 	color: #111;
 }
 
+header h1 span {
+	color: #aaa;
+}
+
 #container header h1 a:hover {
 	opacity: .8;
 
