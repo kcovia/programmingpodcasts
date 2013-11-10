@@ -39,6 +39,7 @@ header h1  {
 	color: #111;
 
 
+
 }
 
 #container header h1 a:hover {
@@ -110,11 +111,12 @@ header h1  {
 #footer {
 	margin: 4% 1%;
 	text-align: center;
-	color: #666;
+
 }
 
 #footer a {
-color: #666;	
+color: #666;
+margin: 1%;	
 }
 
 
@@ -189,7 +191,9 @@ text-align: center;
 	}
 
 	#filters {	
-		text-align: center;}
+		text-align: center;
+		margin: 0;
+		padding: 0;}
 		
 	#filters li  {
 		font-size: 2em;
@@ -197,7 +201,6 @@ text-align: center;
 		display: block;
 		padding: 0;
 		margin: 0;
-
 
 	}
 }
